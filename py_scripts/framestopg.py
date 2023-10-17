@@ -6,9 +6,9 @@ from modifyframes import create_base_df, create_creditscore_df, create_exited_ag
     create_exited_salary_correlation
 
 postgres_host = os.environ.get('localhost')
-postgres_database = os.environ.get('postgres')
-postgres_user = os.environ.get('lumiana')
-postgres_password = os.environ.get('liana135')
+postgres_database = os.environ.get('db_name')
+postgres_user = os.environ.get('username')
+postgres_password = os.environ.get('password')
 postgres_port = os.environ.get('5432')
 
 logging.basicConfig(level=logging.INFO,
@@ -17,9 +17,9 @@ logging.basicConfig(level=logging.INFO,
 try:
     conn = psycopg2.connect(
         host='localhost',
-        database='postgres',
-        user='lumiana',
-        password='liana135',
+        database='db_name',
+        user='username',
+        password='password',
         port=5432
     )
 
