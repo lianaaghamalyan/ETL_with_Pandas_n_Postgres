@@ -10,9 +10,9 @@ logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s:%(funcName)s:%(levelname)s:%(message)s')
 
 postgres_host = os.environ.get('localhost')
-postgres_database = os.environ.get('postgres')
-postgres_user = os.environ.get('lumiana')
-postgres_password = os.environ.get('liana135')
+postgres_database = os.environ.get('db_name')
+postgres_user = os.environ.get('username')
+postgres_password = os.environ.get('password')
 postgres_port = os.environ.get('5432')
 
 destination_path = 'csv_files/churn_modelling.csv'
@@ -21,9 +21,9 @@ url = "https://raw.githubusercontent.com/dogukannulu/datasets/master/Churn_Model
 try:
     conn = psycopg2.connect(
         host='localhost',
-        database='postgres',
-        user='lumiana',
-        password='liana135',
+        database='db_name',
+        user='username',
+        password='password',
         port=5432
     )
 
