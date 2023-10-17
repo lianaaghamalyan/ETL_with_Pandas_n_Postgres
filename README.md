@@ -33,4 +33,5 @@ Let's automate the process a bit using the Airflow DAGs. We will be running Airf
 
 <br>
 
-Now you have a running Airflow container and you can access the UI at https://localhost:8080   :)
+Now you have a running Airflow container and you can access the UI at https://localhost:8080  
+:)
